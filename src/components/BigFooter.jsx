@@ -1,33 +1,10 @@
 import React from 'react';
-import { Flame, Mail, MapPin, Sparkles, ArrowUpRight } from 'lucide-react';
+import { MapPin, Sparkles, ArrowUpRight } from 'lucide-react';
 
 export default function BigFooter({ scrollToSection, onOpenModal }) {
   return (
     <footer className="w-full relative bg-[#040508] border-t border-slate-800/80 pt-16 pb-8 text-slate-400 overflow-hidden">
       
-      {/* Top Banner matching Screenshot 4 */}
-      <div className="max-w-7xl mx-auto px-4 mb-12">
-        <div className="glass-card p-6 border-2 border-amber-500/40 bg-gradient-to-r from-amber-950/40 via-slate-950 to-indigo-950/40 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3 text-center sm:text-left">
-            <Flame className="w-6 h-6 text-amber-400 fill-amber-400 shrink-0" />
-            <div>
-              <h3 className="font-heading text-lg font-bold text-white">
-                Comment "PORTFOLIO" to make it yours. 🔥
-              </h3>
-              <p className="text-xs text-slate-300">
-                Turn your resume into an unforgettable 3D interactive portfolio today.
-              </p>
-            </div>
-          </div>
-
-          <button
-            onClick={onOpenModal}
-            className="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-400 hover:to-rose-400 shadow-lg shadow-amber-500/20 transition-all shrink-0"
-          >
-            Generate Portfolio Plan
-          </button>
-        </div>
-      </div>
 
       {/* Big Watermark Background Text matching Screenshot 4 */}
       <div className="absolute bottom-16 left-1/2 -translate-x-1/2 pointer-events-none select-none opacity-10">
@@ -83,6 +60,15 @@ export default function BigFooter({ scrollToSection, onOpenModal }) {
             </a>
           </div>
 
+        </div>
+
+        {/* Tagline Banner */}
+        <div className="pt-2 text-center">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-indigo-500/10 border border-amber-500/30 backdrop-blur-md shadow-lg shadow-amber-500/5">
+            <span className="font-heading text-sm sm:text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-300 to-amber-100">
+              Resume gets you shortlisted. Portfolio gets you hired. 💼🔥
+            </span>
+          </div>
         </div>
 
         {/* Bottom Line matching Screenshot 4 */}

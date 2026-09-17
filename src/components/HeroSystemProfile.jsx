@@ -1,18 +1,10 @@
 import React from 'react';
-import { Mail, ArrowRight, ShieldCheck, MapPin, Sparkles, Terminal, Flame, Database, BarChart3, ArrowDown } from 'lucide-react';
+import { Mail, ArrowRight, ShieldCheck, MapPin, Sparkles, Terminal, Database, BarChart3, ArrowDown } from 'lucide-react';
 
 export default function HeroSystemProfile({ scrollToSection }) {
   return (
     <section className="w-full pt-4 pb-12">
       
-      {/* Reel Tag Banner */}
-      <div className="flex justify-center mb-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-bold shadow-lg shadow-amber-500/10">
-          <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
-          <span>Resume gets you shortlisted. Portfolio gets you hired. 💼🔥</span>
-        </div>
-      </div>
-
       <div className="glass-card p-6 md:p-10 border border-slate-800 relative overflow-hidden">
         
         {/* Top Section Tag */}
